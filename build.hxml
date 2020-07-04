@@ -1,0 +1,13 @@
+-cp src
+# -D analyzer-optimize
+-main Main
+-lib console.hx
+-lib bmpfont
+--each
+
+--debug
+-cpp bin/debug
+
+--next
+-dce full
+-cpp bin/release
